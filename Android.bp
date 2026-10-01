@@ -28046,6 +28046,305 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "nt_bpf",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_bpf",
+            ],
+            shared_libs: [
+                "libcutils_sockets",
+                "libz",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_core_log",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_core_log",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_file_defrag",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_file_defrag",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+sh_binary {
+    name: "nt_get_node_prop",
+    owner: "nothing",
+    src: "proprietary/system_ext/bin/nt_get_node_prop.sh",
+    filename: "nt_get_node_prop.sh",
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_id_recorder",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_id_recorder",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libjsoncpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_key_monitor",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_key_monitor",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_logkit",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_logkit",
+            ],
+            shared_libs: [
+                "libaudiotoolkit",
+                "libaudioclient",
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libntf",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_ota_notifier",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_ota_notifier",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_smartGC3",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_smartGC3",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_tzdbg_recorder",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_tzdbg_recorder",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nt_xsl_parser",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/nt_xsl_parser",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vtservice",
     owner: "nothing",
     target: {

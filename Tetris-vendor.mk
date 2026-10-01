@@ -8,6 +8,12 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/nothing/Tetris/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/init/nt_bpf.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_bpf.rc \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/init/nt_core.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_core.rc \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/init/nt_logkit.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_logkit.rc \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/init/nt_performance_config.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_performance_config.rc \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/init/nt_performance_init.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_performance_init.rc \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/nt_performance/cmd_table.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nt_performance/cmd_table.xml \
     vendor/nothing/Tetris/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/nothing/Tetris/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/nothing/Tetris/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
@@ -293,9 +299,15 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/nothing/Tetris/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
+    vendor/nothing/Tetris/proprietary/vendor/etc/nt_performance/activity_customization.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/activity_customization.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/nt_performance/nt_named_thread_affinity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/nt_named_thread_affinity.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/nt_performance/platform_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/platform_config.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/nt_performance/scene_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/scene_table.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-csot-nt37705-cmd-cli_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-csot-nt37705-cmd-cli_pq.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-truly-td4330-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-truly-td4330-cmd_pq.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/performance/cmd_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/performance/cmd_table.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/performance/scene_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/performance/scene_table.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
@@ -1259,6 +1271,17 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     wmt_launcher \
     wmt_loader \
+    nt_bpf \
+    nt_core_log \
+    nt_file_defrag \
+    nt_get_node_prop \
+    nt_id_recorder \
+    nt_key_monitor \
+    nt_logkit \
+    nt_ota_notifier \
+    nt_smartGC3 \
+    nt_tzdbg_recorder \
+    nt_xsl_parser \
     vtservice
 
 PRODUCT_PACKAGES += \
