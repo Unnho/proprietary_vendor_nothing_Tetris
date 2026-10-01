@@ -243,6 +243,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/init.insmod.mt6878.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6878.cfg \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.biometrics.face-service.noth.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face-service.noth.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
@@ -314,6 +315,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-csot-nt37705-cmd-cli_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-csot-nt37705-cmd-cli_pq.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-truly-td4330-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-truly-td4330-cmd_pq.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/performance/cmd_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/performance/cmd_table.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/performance/scene_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/performance/scene_table.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
@@ -1062,6 +1064,7 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service-impl \
     libaudiopreprocessing_mtk \
     libspatializer \
+    libstfaceunlockppl \
     vendor.aac.hardware.richtap.vibrator-V2-ndk \
     vendor.hardware.light-V1-ndk \
     vendor.mediatek.hardware.aee-V1-ndk \
@@ -1220,6 +1223,7 @@ PRODUCT_PACKAGES += \
     mediatek-ims-extension-plugin \
     mediatek-telephony-base \
     CommandService.xml \
+    android.hardware.biometrics.face-service.noth.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
@@ -1254,6 +1258,7 @@ PRODUCT_PACKAGES += \
     fuelgauged_nvram \
     gbe \
     loghidlvendorservice \
+    android.hardware.biometrics.face-service.noth \
     android.hardware.gatekeeper-service.trustonic \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.2-service \

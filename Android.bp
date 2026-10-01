@@ -26581,6 +26581,30 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libstfaceunlockppl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstfaceunlockppl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "CommandService.xml",
     owner: "nothing",
@@ -26774,6 +26798,15 @@ prebuilt_etc_xml {
     name: "android.hardware.tetheroffload-V1-service.xml",
     owner: "nothing",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.biometrics.face-service.noth.xml",
+    owner: "nothing",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.face-service.noth.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -28719,7 +28752,44 @@ install_symlink {
 install_symlink {
     name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_af_ParameterDB_af_db",
     soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db",
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/dbcc_prebuilt_binary {
+    name: "android.hardware.biometrics.face-service.noth",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.biometrics.face-service.noth",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "android.hardware.biometrics.face-V3-ndk",
+                "android.hardware.biometrics.common-V3-ndk",
+                "libstfaceunlockppl",
+                "libcutils",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libui",
+                "libcamera2ndk_vendor",
+                "libmediandk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+/af/ParameterDB_af.db",
     symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6878/ParameterDB_af.db",
 }
 
