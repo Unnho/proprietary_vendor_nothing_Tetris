@@ -221,6 +221,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/first_zramwriteback.fstab:$(TARGET_COPY_OUT_VENDOR)/etc/first_zramwriteback.fstab \
     vendor/nothing/Tetris/proprietary/vendor/etc/genshin.dla:$(TARGET_COPY_OUT_VENDOR)/etc/genshin.dla \
     vendor/nothing/Tetris/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
@@ -280,6 +281,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/nt_zramwriteback.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nt_zramwriteback.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/touch_boost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touch_boost.rc \
@@ -1262,6 +1264,7 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service \
     muxreport \
     netdagent \
+    nt_gen_zramwriteback_fstab \
     ntf-service \
     nvram_daemon \
     rcs_volte_stack \

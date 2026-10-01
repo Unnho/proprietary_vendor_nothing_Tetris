@@ -27774,6 +27774,35 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "nt_gen_zramwriteback_fstab",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/nt_gen_zramwriteback_fstab",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "ntf-service",
     owner: "nothing",
     target: {
