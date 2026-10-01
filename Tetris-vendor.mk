@@ -251,9 +251,12 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/arm.mali.platform-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/arm.mali.platform-mediatek.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/eara-io-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eara-io-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fpsgo.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
@@ -275,6 +278,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
@@ -286,6 +290,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/touch_boost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touch_boost.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@V1-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
@@ -439,6 +445,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_night_video \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
+    libasn1c_core \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -521,6 +528,7 @@ PRODUCT_PACKAGES += \
     libhfmanagerwrapper \
     libhidparser \
     libhwm \
+    libicd_decoder \
     libifcutils_mtk \
     libimagebuffer_wrapper \
     libion_mtk \
@@ -642,6 +650,7 @@ PRODUCT_PACKAGES += \
     libsysenv \
     libtflite_mtk_vendor \
     libthha \
+    libtranslator_utils \
     libtrm \
     libttm_nightsight \
     libttm_nightsight_ae \
@@ -668,6 +677,7 @@ PRODUCT_PACKAGES += \
     libwifical \
     libwifinvram \
     libwifinvramdata \
+    libwifitest \
     libwpa_client \
     libwpfa \
     libdrmclearkeyplugin \
@@ -1054,10 +1064,14 @@ PRODUCT_PACKAGES += \
     libspatializer \
     vendor.aac.hardware.richtap.vibrator-V2-ndk \
     vendor.hardware.light-V1-ndk \
+    vendor.mediatek.hardware.aee-V1-ndk \
+    vendor.mediatek.hardware.aee@1.0 \
+    vendor.mediatek.hardware.aee@1.1 \
     vendor.mediatek.hardware.apmonitor-V1-ndk \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.apusys-V3-ndk \
     vendor.mediatek.hardware.apuware.utils@2.0_vendor \
+    vendor.mediatek.hardware.atci-V1-ndk \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
@@ -1078,11 +1092,14 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.clientapi-V1-ndk \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.dmc-V1-ndk \
     vendor.mediatek.hardware.gnss-V1-ndk \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
     vendor.mediatek.hardware.lbs@1.0 \
+    vendor.mediatek.hardware.log-V1-ndk \
     vendor.mediatek.hardware.mdmonitor-V1-ndk \
+    vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
@@ -1208,6 +1225,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
     android.hardware.security.sharedsecret-service.trustonic.xml \
+    android.hardware.tetheroffload-V1-service.xml \
     arm.mali.platform-mediatek.xml \
     gnss-aosp.xml \
     gnss-mtk.xml \
@@ -1223,16 +1241,19 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service.xml \
     mtkgnss-batching.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
+    atcid \
     bip_ap \
     ccci_mdinit \
     ccci_rpcd \
     conninfra_loader \
+    dmc_core \
     eara_io_service \
     fpsgo \
     frs \
     fuelgauged \
     fuelgauged_nvram \
     gbe \
+    loghidlvendorservice \
     android.hardware.gatekeeper-service.trustonic \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.2-service \
@@ -1246,6 +1267,8 @@ PRODUCT_PACKAGES += \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
+    vendor.mediatek.hardware.aee@1.1-service \
+    vendor.mediatek.hardware.aee@V1-service \
     vendor.mediatek.hardware.gnss-service \
     vendor.mediatek.hardware.gpuserv-service \
     vendor.mediatek.hardware.mmagent-service \
