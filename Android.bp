@@ -26585,6 +26585,94 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "eara_io_service",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/eara_io_service",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "vendor.mediatek.hardware.power@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "fpsgo",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/fpsgo",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "libui",
+                "libutils",
+                "libexpat",
+                "vendor.mediatek.hardware.power@2.0",
+                "liblog",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "frs",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/frs",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libifcutils_mtk",
+                "libmipc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "fuelgauged",
     owner: "nothing",
     target: {
@@ -26626,6 +26714,36 @@ cc_prebuilt_binary {
                 "liblog",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "gbe",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/gbe",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "libui",
+                "libutils",
+                "libexpat",
+                "vendor.mediatek.hardware.power@2.0",
+                "liblog",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -27760,6 +27878,35 @@ cc_prebuilt_binary {
                 "libmtkproperty",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "touch_boost",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/touch_boost",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "libui",
+                "libutils",
+                "libexpat",
+                "liblog",
+                "libc++",
                 "libm",
                 "libdl",
             ],

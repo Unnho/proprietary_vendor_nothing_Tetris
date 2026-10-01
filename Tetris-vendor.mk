@@ -245,15 +245,20 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/arm.mali.platform-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/arm.mali.platform-mediatek.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/eara-io-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eara-io-service.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fpsgo.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/init.frs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.frs.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.ntf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ntf.rc \
@@ -271,9 +276,11 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/touch_boost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touch_boost.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.fingerprint.goodix.config.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.fingerprint.goodix.config.rc \
@@ -289,6 +296,9 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-csot-nt37705-cmd-cli_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-csot-nt37705-cmd-cli_pq.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/panel-truly-td4330-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-truly-td4330-cmd_pq.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/nothing/Tetris/proprietary/vendor/etc/samsung,s6e8fc3x02_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/samsung,s6e8fc3x02_pq.xml \
@@ -1203,8 +1213,12 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     conninfra_loader \
+    eara_io_service \
+    fpsgo \
+    frs \
     fuelgauged \
     fuelgauged_nvram \
+    gbe \
     android.hardware.gatekeeper-service.trustonic \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.2-service \
@@ -1240,6 +1254,7 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     rcs_volte_stack \
     thermal_core \
+    touch_boost \
     volte_clientapi_ua \
     volte_rcs_ua \
     wmt_launcher \
