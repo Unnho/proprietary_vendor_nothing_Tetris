@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/system_ext/etc/init/nt_performance_init.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_performance_init.rc \
     vendor/nothing/Tetris/proprietary/system_ext/etc/nt_performance/cmd_table.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nt_performance/cmd_table.xml \
     vendor/nothing/Tetris/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/permissions/com.nothing.feature.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.nothing.feature.xml \
     vendor/nothing/Tetris/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/nothing/Tetris/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/nothing/Tetris/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
