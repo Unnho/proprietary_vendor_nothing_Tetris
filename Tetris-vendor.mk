@@ -96,6 +96,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_ParamUnitDesc.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/CRSVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_AudioParam.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_ParamUnitDesc.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/Codec_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Codec_AudioParam.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/Codec_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Codec_ParamUnitDesc.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/HpImpedance_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_AudioParam.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_ParamUnitDesc.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/MicInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/MicInfo_AudioParam.xml \
@@ -115,6 +117,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/Playback_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_AudioParam.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/Playback_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_ParamTreeView.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/Playback_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_ParamUnitDesc.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/Power_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Power_AudioParam.xml \
+    vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/Power_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Power_ParamUnitDesc.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/RecordDMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordDMNR_AudioParam.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/RecordDMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordDMNR_ParamUnitDesc.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/audio_param/RecordFIR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordFIR_AudioParam.xml \
@@ -327,6 +331,100 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/NT_OnOff_button.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_OnOff_button.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/NT_camera_photo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_camera_photo.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/NT_camera_zoom.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_camera_zoom.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/NT_charge.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_charge.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/NT_letters_navi.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_letters_navi.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/NT_unlock_error.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_unlock_error.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/NT_unlock_successful.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_unlock_successful.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/arp.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/arp.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/crab.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/crab.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/fidget.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/fidget.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/grains.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/grains.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/pace.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/pace.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/reflect.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/reflect.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/repeater.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/repeater.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/saw.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/saw.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/shake.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/shake.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/alarm/trad.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/trad.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/common_notification1.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_notification1.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/common_notification2.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_notification2.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/common_ringtone1.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_ringtone1.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/common_ringtone2.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_ringtone2.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/default/click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/default/double_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/double_click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/default/heavy_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/heavy_click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/default/pop.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/pop.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/default/texture_tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/texture_tick.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/default/thud.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/thud.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/default/tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/tick.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/beak.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/beak.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/bulb_one.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/bulb_one.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/cough.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/cough.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/croak.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/croak.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/cuckoo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/cuckoo.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/doub.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/doub.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/flap.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/flap.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/gargle.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/gargle.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/guiro.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/guiro.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/hum.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/hum.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/lonba.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/lonba.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/nope.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/nope.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/oi!.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/oi!.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/pep.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/pep.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/rude.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/rude.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/sharp.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/sharp.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/swanny.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/swanny.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/woo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/woo.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/yeh.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/yeh.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/notification/zip.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/zip.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/abra.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/abra.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/anna.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/anna.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/beetle.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/beetle.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/clwb.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/clwb.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/coded.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/coded.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/crossing.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/crossing.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/dolphin.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/dolphin.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/hammer.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/hammer.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/latency.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/latency.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/plot.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/plot.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/pneumatic.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/pneumatic.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/pulse.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/pulse.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/radiate.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/radiate.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/ripple.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/ripple.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/squirrels.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/squirrels.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/sticks.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/sticks.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/tennis.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/tennis.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/wings.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/wings.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/wizard.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/wizard.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/ringtone/woo_yeh.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/woo_yeh.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/NT_OnOff_button.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_OnOff_button.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/NT_camera_photo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_camera_photo.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/NT_camera_zoom.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_camera_zoom.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/NT_letters_navi.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_letters_navi.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/NT_unlock_error.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_unlock_error.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/NT_unlock_successful.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_unlock_successful.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/double_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/double_click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/heavy_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/heavy_click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/pop.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/pop.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/texture_tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/texture_tick.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/thud.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/thud.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/strong/tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/tick.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/NT_OnOff_button.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_OnOff_button.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/NT_camera_photo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_camera_photo.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/NT_camera_zoom.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_camera_zoom.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/NT_letters_navi.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_letters_navi.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/NT_unlock_error.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_unlock_error.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/NT_unlock_successful.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_unlock_successful.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/double_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/double_click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/heavy_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/heavy_click.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/pop.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/pop.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/texture_tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/texture_tick.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/thud.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/thud.he \
+    vendor/nothing/Tetris/proprietary/vendor/etc/richtapresources/weak/tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/tick.he \
     vendor/nothing/Tetris/proprietary/vendor/etc/samsung,s6e8fc3x02_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/samsung,s6e8fc3x02_pq.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/nothing/Tetris/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
