@@ -299,7 +299,10 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.fingerprint.goodix.config.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.fingerprint.goodix.config.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.hardware.camera-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.camera-service.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.hardware.charge-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.charge-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.hardware.stability-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.stability-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
@@ -608,6 +611,9 @@ PRODUCT_PACKAGES += \
     libnpagent_server \
     libntcamallocator \
     libntcamcommonutils \
+    libntcamcore \
+    libntcamera2ndk_vendor_v2 \
+    libntcamextened \
     libntcamimage_io \
     libntcammetadata \
     libntcamselector \
@@ -1145,7 +1151,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk_vendor \
+    vendor.noth.hardware.camera-V1-ndk \
+    vendor.noth.hardware.charge-V1-ndk \
     vendor.noth.hardware.sensor.sensor_extension-V1-ndk \
+    vendor.noth.hardware.stability-V1-ndk \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -1244,7 +1253,10 @@ PRODUCT_PACKAGES += \
     mapper.mediatek.xml \
     mtk_lbs_service.xml \
     mtkgnss-batching.xml \
+    vendor.noth.hardware.camera-service.xml \
+    vendor.noth.hardware.charge-service.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
+    vendor.noth.hardware.stability-service.xml \
     atcid \
     bip_ap \
     ccci_mdinit \
@@ -1280,7 +1292,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
+    vendor.noth.hardware.camera-service \
+    vendor.noth.hardware.charge-service \
     vendor.noth.hardware.sensor.sensor_extension-service \
+    vendor.noth.hardware.stability-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_aidl \
     init.insmod \

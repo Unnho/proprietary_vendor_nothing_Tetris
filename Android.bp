@@ -28752,7 +28752,11 @@ install_symlink {
 install_symlink {
     name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_af_ParameterDB_af_db",
     soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/dbcc_prebuilt_binary {
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6878/ParameterDB_af.db",
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.biometrics.face-service.noth",
     owner: "nothing",
     target: {
@@ -28787,10 +28791,6 @@ install_symlink {
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
-}
-
-/af/ParameterDB_af.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6878/ParameterDB_af.db",
 }
 
 install_symlink {
@@ -28916,7 +28916,10 @@ install_symlink {
     name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx882_mipi_raw_ISP_mapping_db",
     soc_specific: true,
     installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLitecc_prebuilt_binary {
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/mt6878/ISP_mapping.db",
+}
+
+cc_prebuilt_binary {
     name: "vendor.mediatek.hardware.aee@1.1-service",
     owner: "nothing",
     target: {
@@ -29085,9 +29088,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-Module/db/tuning_DB/imx882_mipi_raw/mt6878/ISP_mapping.db",
 }
 
 install_symlink {
@@ -31930,4 +31930,319 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/sc202cssj_mipi_raw_tuning.so",
     symlink_target: "/vendor/lib64/mt6878/sc202cssj_mipi_raw_tuning.so",
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamcore",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamcore.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.allocator-V1-ndk",
+                "android.hardware.graphics.mapper@4.0",
+                "libbinder_ndk",
+                "libcutils",
+                "libcamera_metadata",
+                "libdmabufheap",
+                "liblog",
+                "libntcamallocator",
+                "libntcamcommonutils",
+                "libntcamextened",
+                "libntcammetadata",
+                "libntcamselector",
+                "libntcamthread",
+                "libntf",
+                "libsync",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamextened",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamextened.so",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libcutils",
+                "libjsoncpp",
+                "liblog",
+                "libntcamcommonutils",
+                "libntcammetadata",
+                "libntcamthread",
+                "libntcamera2ndk_vendor_v2",
+                "libsync",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamera2ndk_vendor_v2",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamera2ndk_vendor_v2.so",
+            ],
+            shared_libs: [
+                "android.frameworks.cameraservice.common-V1-ndk",
+                "android.frameworks.cameraservice.device-V1-ndk",
+                "android.frameworks.cameraservice.service-V1-ndk",
+                "libbinder_ndk",
+                "libcamera_metadata",
+                "libcutils",
+                "libfmq",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libmediandk",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.noth.hardware.camera-V1-ndk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.noth.hardware.camera-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.noth.hardware.charge-V1-ndk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.noth.hardware.charge-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.noth.hardware.stability-V1-ndk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.noth.hardware.stability-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.noth.hardware.camera-service.xml",
+    owner: "nothing",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.noth.hardware.camera-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.noth.hardware.charge-service.xml",
+    owner: "nothing",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.noth.hardware.charge-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.noth.hardware.stability-service.xml",
+    owner: "nothing",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.noth.hardware.stability-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.noth.hardware.camera-service",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.noth.hardware.camera-service",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libbase",
+                "libbinder_ndk",
+                "libcamera_metadata",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libntcamcommonutils",
+                "libntcamcore",
+                "libsync",
+                "libui",
+                "libutils",
+                "vendor.noth.hardware.camera-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.noth.hardware.charge-service",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.noth.hardware.charge-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "vendor.noth.hardware.charge-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.noth.hardware.stability-service",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.noth.hardware.stability-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libntf",
+                "libutils",
+                "vendor.noth.hardware.stability-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
 }
